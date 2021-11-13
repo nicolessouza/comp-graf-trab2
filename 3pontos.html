@@ -5,6 +5,12 @@
     <title>Canvas</title>
     <style type="text/css">
 
+a{
+    color: gray;
+    font-size: 20px;
+
+}
+
     body{
     margin: 5;
     background-color: beige;
@@ -31,47 +37,36 @@ h1 {
 }
 
 .botao{
+    text-align: center;
     background-color:rgba(0,0,200,0.3);
     color: white;
 }
 
-.canvas{
-	text-align: center;
+canvas{
+    border: 1px solid black;
 }
 
-
-a{
-    color: gray;
-    font-size: 20px;
-
-}
-
-    footer{
+footer{
     font: arial;
     color: rgba(0,0,200,0.3);
     text-align: center;
-
-    }
+}
 		    
     </style>
 </head>
 <body>
 
-    <h1>VISUALIZAÇÃO TEOREMA DE PITÁGORAS</h1>
+    <h1>DEMONSTRAÇÃO: QUAISQUER 3 PONTOS FORMAM UMA CIRCUNFERÊNCIA</h1>
     <section class="container row">
-        <div class="item">
-            <button class="botao" onclick="animar1()">Animação 1</button>
-            <button class="botao"onclick="animar2()">Animação 2</button>
-            <button class="botao" onclick="montarFigura()">Restaurar</button>
+        <div class="item"> 
+            <button class="botao" onclick="animar()">Pressione</button>
         </div>
-	<div class="canvas"><canvas></canvas></div>
+        
+	<canvas></canvas>
     </section>   
 
-    <script src="canvas.js"></script>
-    
-    <a href="3pontos.html">Quer ver outra demonstração?</a>
-
+    <script src="canvas2.js"></script>
+    <a href="index.html">Quer ver outra demonstração?</a>
 </body>
-
 <footer>Desenvolvido por Nicole dos Santos</footer>
 </html>
